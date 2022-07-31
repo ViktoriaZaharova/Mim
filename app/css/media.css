@@ -1,0 +1,491 @@
+/*==========  Desktop First  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  .search-wrapper {
+    max-width: 480px; }
+  .dropdown-cabinet {
+    margin: 0 15px; } }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  header .logo {
+    margin: 0 20px 0 0; }
+  .search-wrapper {
+    max-width: 280px; }
+  .dropdown-cabinet {
+    margin: 0 15px; }
+  table, tbody, thead {
+    display: block; }
+  .tbody .td {
+    padding: 8px 16px; }
+  .td {
+    background: transparent;
+    padding: 8px 16px; }
+    .td:first-child {
+      border-radius: 0; }
+    .td:last-child {
+      border-radius: 0; }
+  .tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border-radius: 16px;
+    border: 1px solid #E1E1E1;
+    background: #fff; }
+  .td {
+    border: none; }
+    .td:last-child {
+      border: none; }
+    .td:first-child {
+      border: none; }
+  thead .tr {
+    background: transparent; }
+  .td-description {
+    width: 50%; }
+  .td-salesman, .td-price {
+    width: 20%;
+    padding: 26px 10px; }
+  .td-server {
+    width: 10%; }
+  .table-deals .thead {
+    display: none; }
+  .table-deals .td-date, .table-deals .td-order {
+    width: 50%;
+    color: #9D9D9D;
+    font-size: 14px;
+    padding: 16px 16px 8px; }
+  .table-deals .td-order {
+    padding: 16px 16px 8px;
+    text-align: right; }
+    .table-deals .td-order a {
+      margin-left: auto;
+      color: #9D9D9D; }
+  .table-deals .td-description {
+    width: 100%;
+    padding: 0 16px 8px; }
+  .table-deals .td-sum {
+    padding: 0 16px 16px;
+    width: 100%; }
+  .table-deals .td-sum {
+    width: 100%; }
+  .table-deals .td-status {
+    border-top: 1px solid #282828;
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    padding: 16px; }
+  .table-deals .td-settings {
+    position: absolute;
+    bottom: 20px;
+    right: 16px;
+    padding: 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content; }
+  .tr {
+    position: relative; }
+  .table-buy .td-salesman {
+    border-top: 1px solid #282828;
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    padding: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .table-buy .td-status {
+    display: none; }
+  .table-buy .td-sum {
+    width: 100%;
+    padding: 0 16px 16px; }
+  .td-salesman .status-order {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 8px; }
+  .table-history .td {
+    width: 100%; }
+    .table-history .td-date, .table-history .td-number {
+      width: 50%;
+      font-size: 14px;
+      padding: 16px 16px 8px;
+      color: #9D9D9D; }
+    .table-history .td-number {
+      text-align: right; }
+    .table-history .td:nth-child(3) {
+      padding: 0 16px 16px; }
+    .table-history .td-method {
+      display: none; }
+    .table-history .td-status {
+      padding: 16px;
+      border-top: 1px solid #282828; }
+  .table-history .td-status {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .table-history .td-status .salesman-box {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin: 0 8px 8px 0; }
+  .table-history .thead {
+    display: none; }
+  .table-history .td-sum {
+    font-weight: 500;
+    font-size: 20px; }
+  .history {
+    margin: 40px 0 42px; }
+  .col-4, .col-6 {
+    width: 100%; }
+  .order-box {
+    max-width: none; }
+  .footer-list li {
+    margin: 0 10px 0 0; }
+  .list-payment li a {
+    max-width: 50px; } }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .search-wrapper {
+    max-width: 220px; }
+  header .btn-group {
+    display: none; }
+  .btn-burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 15px; }
+  .dropdown-cabinet {
+    margin-right: 0; }
+  .registration-box {
+    max-width: 500px;
+    border-radius: 16px; }
+    .registration-box__head {
+      padding: 24px 16px 0; }
+    .registration-box__body {
+      padding: 32px 16px; }
+    .registration-box__footer {
+      padding: 24px 16px; }
+  .settings-page h1 {
+    margin: 0 auto 24px; }
+  .settings-page .form-password button {
+    margin: 0 auto; }
+  h1 {
+    font-size: 28px; }
+  .modal__div, .page-wrapper {
+    max-width: 500px; }
+  .col-3 {
+    width: 50%; }
+  .games {
+    margin: 24px 0 0; }
+    .games h2 {
+      margin: 0 0 24px; }
+  .games-line {
+    margin: 0 0 32px; }
+  .ads-section {
+    margin: 0 0 26px; }
+  .thead {
+    display: none; }
+  .table {
+    margin: 24px 0 0; }
+  .table-ads .td {
+    padding: 16px; }
+    .table-ads .td-server {
+      width: 10%; }
+    .table-ads .td-description {
+      width: 70%; }
+    .table-ads .td-salesman {
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1;
+      width: 100%;
+      padding: 16px;
+      border-top: 1px solid #E1E1E1; }
+  .tr:before {
+    display: block;
+    content: attr(data-table);
+    margin: 0 0 8px;
+    width: 100%;
+    color: #9D9D9D;
+    font-size: 14px;
+    padding: 16px 16px 0; }
+  .table-deals .tr:before {
+    display: none; }
+  .table-deals .td-settings {
+    padding: 0; }
+  .table-deals .td-sum {
+    padding-top: 0; }
+  .table-history .tr:before {
+    display: none; }
+  .td-sum {
+    font-weight: 500;
+    font-size: 20px; }
+  .form-chat .registration-box__body {
+    padding: 30px 16px; }
+  .registration-box-settings .registration-box__body {
+    padding: 24px 16px; }
+  .registration-box-settings .text {
+    width: 100%;
+    max-width: none;
+    margin: 0 0 16px; }
+  .order-box {
+    max-width: none; }
+  .list-payment {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
+    .list-payment li {
+      margin: 0 0 8px; }
+      .list-payment li:last-child {
+        margin: 0; }
+  .footer-list {
+    max-width: 400px; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 680px) {
+  .wrapper-registration .search-wrapper {
+    display: none; }
+  .wrapper-registration header {
+    background: #1C1C1C;
+    padding: 9px 0; }
+  .wrapper-registration footer {
+    display: none; }
+  header {
+    border: none;
+    padding: 9px 0 0; }
+  .search-wrapper {
+    max-width: none;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%;
+    margin: 9px 0; }
+  .btn-burger {
+    margin-left: auto; }
+  .user-menu, .dropdown-cabinet {
+    display: none; }
+  .col-3 {
+    width: 100%; }
+  .finance-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 24px 0; }
+    .finance-box h4 {
+      padding: 0 16px;
+      margin: 0 0 8px; }
+    .finance-box__val {
+      width: 100%;
+      padding: 0 16px 24px;
+      margin: 0;
+      border-bottom: 1px solid #282828; }
+    .finance-box .btn {
+      margin: 24px auto 0; }
+  .filter-wrapper .form-search {
+    width: 100%;
+    max-width: none; }
+  .dropdown-price {
+    margin: 16px 0 0; }
+  .copyright, .footer-list li {
+    margin: 0 15px 0 0; }
+  .levels-game-max {
+    max-width: 311px; }
+  .levels-game-preview {
+    width: calc(100% - 311px); }
+  .mobile-menu {
+    height: calc(100% - 100px); } }
+
+@media only screen and (max-width: 576px) {
+  header {
+    margin: 0 0 24px; }
+  .container {
+    padding: 0 16px; }
+  .btn-group-user {
+    display: none; }
+  .wrapper-registration header {
+    margin: 0; }
+  .wrapper-registration .registration-box {
+    background: transparent; }
+    .wrapper-registration .registration-box__head {
+      padding: 0; }
+    .wrapper-registration .registration-box__body {
+      padding: 0;
+      margin: 32px 0; }
+    .wrapper-registration .registration-box__footer {
+      padding: 0;
+      border: none; }
+  .form-row {
+    margin: 0 0 24px; }
+  footer {
+    margin: 33px 0 0; }
+    footer .container {
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
+  .footer-list {
+    width: 70%; }
+    .footer-list li {
+      width: 100%;
+      margin: 0 0 12px; }
+      .footer-list li:last-child {
+        margin: 0; }
+  .copyright {
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: 12px 0 0; }
+  .page {
+    padding: 24px 0 0; }
+  h1 {
+    margin: 0 0 20px; }
+  h2 {
+    font-size: 22px; }
+  .settings-page .form-password button {
+    width: 100%; }
+  .modal__div {
+    max-width: 345px; }
+    .modal__div h2 {
+      font-size: 22px; }
+    .modal__div-head {
+      padding: 24px 16px 32px; }
+    .modal__div-body {
+      padding: 0 16px 32px; }
+    .modal__div-footer {
+      padding: 24px 16px; }
+  .modal__wrapper {
+    border-radius: 16px; }
+  .btn-close-modal {
+    display: none; }
+  .modal-form button {
+    max-width: none;
+    width: 100%; }
+  .page-wrapper {
+    max-width: 343px; }
+  .tabs__caption {
+    margin: 0 0 24px; }
+    .tabs__caption li {
+      padding: 0 0 12px;
+      margin: 0 28px 0 0; }
+  .add-photo {
+    display: none; }
+  .link-delete {
+    margin: 0;
+    height: 40px;
+    border: 1px solid #fff;
+      border-radius: 69px;
+    padding: 7px 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .form-row-profile .user-photo {
+    margin: 0 16px 0 0;
+    width: 56px;
+    height: 56px;
+    min-width: 56px; }
+  .mb-40 {
+    margin-bottom: 24px; }
+  .table-ads .td {
+    width: 100%; }
+    .table-ads .td:first-child {
+      display: none; }
+    .table-ads .td:nth-child(2) {
+      width: 100%;
+      padding: 0 16px; }
+    .table-ads .td:nth-child(4) {
+      width: 100%;
+      margin: 8px 0 0;
+      padding: 0 16px 16px; }
+  .btn-toggle {
+    margin: 16px auto 0; }
+  .chat-box h2 {
+    display: none; }
+  .form-chat .registration-box__body {
+    height: 324px; }
+  .title-wrapper {
+    margin: 0 0 24px; }
+    .title-wrapper h1 {
+      margin: 0 0 8px;
+      width: 100%; }
+  .chat-box-status h2 {
+    display: block; }
+  .error-page h1 {
+    font-size: 150px;
+    line-height: 128px; }
+  .error-page .subtitle {
+    margin: 24px auto;
+    font-size: 16px;
+    font-weight: 500; }
+  .file-result__box {
+    width: 68px;
+    height: 60px; }
+  .info-finance-line:last-child .w-50 {
+    width: 100%; }
+  .info-finance-line:last-child .info-finance-line__item {
+    margin: 0 0 24px; }
+    .info-finance-line:last-child .info-finance-line__item:last-child {
+      margin: 0; }
+  .file-result-order {
+    margin: 16px -4px 0;
+    width: calc(100% + 8px); }
+    .file-result-order .file-result__box {
+      width: 106px;
+      height: 98px;
+      padding: 0 4px;
+      margin: 0 0 8px; }
+      .file-result-order .file-result__box:last-child {
+        margin: 0; }
+  .modal__div-body .file-result__box {
+    width: 106px;
+    height: 98px;
+    padding: 0 4px;
+    margin: 0 0 8px; }
+  .levels-game-max {
+    max-width: none; }
+  .levels-game-preview {
+    width: 100%;
+    padding: 0; }
+    .levels-game-preview__item {
+      width: calc(33.3% - 6px);
+      display: none; }
+      .levels-game-preview__item:nth-child(-n+9) {
+        display: block; } }
+
+@media only screen and (max-width: 480px) {
+  .levels-game-preview__item {
+    height: 98px; }
+  .levels-game-box {
+    height: 690px; } }

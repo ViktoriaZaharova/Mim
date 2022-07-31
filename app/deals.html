@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>JYN</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+
+<div class="wrapper">
+  <div class="mobile-menu">
+    <div class="mobile-menu__head">
+      <div class="user-photo"></div>
+      <div class="user-name">Jane Cooper</div>
+    </div>
+    <div class="mobile-menu__body">
+      <a href="#" class="dropdown-menu__link">
+        <span class="dropdown-menu__link-icon"><img src="img/menu-icon1.svg" alt=""></span>
+        <span class="dropdown-menu__link-text">Мои финансы</span>
+        <span class="money-value">3 245.50  ₽</span>
+      </a>
+      <a href="#" class="dropdown-menu__link">
+        <span class="dropdown-menu__link-icon"><img src="img/menu-icon2.svg" alt=""></span>
+        <span class="dropdown-menu__link-text">Настройки</span>
+      </a>
+      <a href="#" class="dropdown-menu__link">
+        <span class="dropdown-menu__link-icon"><img src="img/menu-icon3.svg" alt=""></span>
+        <span class="dropdown-menu__link-text">Центр помощи</span>
+      </a>
+      <a href="#" class="dropdown-menu__link">
+        <span class="dropdown-menu__link-icon"><img src="img/menu-icon4.svg" alt=""></span>
+        <span class="dropdown-menu__link-text">Выход</span>
+      </a>
+    </div>
+    <div class="mobile-menu__footer">
+      <a href="#modal1" class="btn btn-white btn-lg open_modal">Подать объявление</a>
+    </div>
+  </div>
+
+  <header>
+    <div class="container">
+      <a href="/" class="logo">Mim</a>
+
+      <div class="search-wrapper">
+        <form method="post" class="form-search">
+          <label>
+            <input type="text" placeholder="Поиск по играм" name="search" required>
+            <span class="clear-search"><svg class="svg-icon"><use xlink:href="img/sprite.svg#close"></use></svg></span>
+          </label>
+          <button type="submit" class="btn-search">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </form>
+
+        <div class="search-result">
+          <a href="#" class="search-result__link">
+            <span class="search-result__link-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#search"></use></svg></span>
+            <span class="search-result__link-text">Dark Orbit</span>
+          </a>
+          <a href="#" class="search-result__link">
+            <span class="search-result__link-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#search"></use></svg></span>
+            <span class="search-result__link-text">Drakensang Online</span>
+          </a>
+          <a href="#" class="search-result__link">
+            <span class="search-result__link-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#search"></use></svg></span>
+            <span class="search-result__link-text">Diablo Immortal</span>
+          </a>
+          <a href="#" class="search-result__link">
+            <span class="search-result__link-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#search"></use></svg></span>
+            <span class="search-result__link-text">Dota 2</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="user-menu">
+        <a href="#" class="user-menu__link color-white font-500">Мои сделки
+          <span class="user-menu__val">23</span>
+        </a>
+      </div>
+
+      <div class="dropdown dropdown-cabinet">
+        <div class="user-avatar dropdown-toggle"></div>
+        <div class="dropdown-menu">
+          <div class="dropdown-menu__head">
+            <div class="user-photo"></div>
+            <div class="user-name">Jane Cooper</div>
+          </div>
+          <div class="dropdown-menu__body">
+            <a href="#" class="dropdown-menu__link">
+              <span class="dropdown-menu__link-icon"><img src="img/menu-icon1.svg" alt=""></span>
+              <span class="dropdown-menu__link-text">Мои финансы</span>
+              <span class="money-value">3 245.50  ₽</span>
+            </a>
+            <a href="#" class="dropdown-menu__link">
+              <span class="dropdown-menu__link-icon"><img src="img/menu-icon2.svg" alt=""></span>
+              <span class="dropdown-menu__link-text">Настройки</span>
+            </a>
+            <a href="#" class="dropdown-menu__link">
+              <span class="dropdown-menu__link-icon"><img src="img/menu-icon3.svg" alt=""></span>
+              <span class="dropdown-menu__link-text">Центр помощи</span>
+            </a>
+            <a href="#" class="dropdown-menu__link">
+              <span class="dropdown-menu__link-icon"><img src="img/menu-icon4.svg" alt=""></span>
+              <span class="dropdown-menu__link-text">Выход</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-group">
+        <a href="#modal1" class="btn btn-white btn-md open_modal">Подать объявление</a>
+      </div>
+
+      <div class="btn-burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <div class="content">
+
+    <section class="ads-section deals-section">
+      <div class="container">
+        <h1>Мои сделки</h1>
+
+        <div class="tabs">
+          <ul class="tabs__caption my-ul">
+            <li class="active">
+              <p>Продажи</p>
+              <span>2</span>
+            </li>
+            <li>
+              <p>Покупки</p>
+              <span>1</span>
+            </li>
+          </ul>
+          <div class="tabs__content active">
+
+            <table class="table table-deals">
+              <thead class="thead">
+                <tr class="tr">
+                  <td class="td td-date">Дата</td>
+                  <td class="td td-order">Заказ</td>
+                  <td class="td td-description">Описание</td>
+                  <td class="td td-status">Статус</td>
+                  <td class="td td-sum">Сумма</td>
+                  <td class="td td-settings"></td>
+                </tr>
+              </thead>
+
+              <tbody class="tbody">
+                <tr class="tr">
+                  <td class="td td-date">
+                    <p>6 июня, 2022 / 13:12</p>
+                  </td>
+                  <td class="td td-order">
+                    <p>#DGSDVFE25t </p>
+                  </td>
+                  <td class="td td-description">
+                    <p>Описание Продавец Цена 💜Личный акк...</p>
+                  </td>
+                  <td class="td td-status">
+                    <div class="status-order status-order-off">
+                      <div class="status-order-dot"></div>
+                      <p>Закрыт</p>
+                    </div>
+                  </td>
+
+                  <td class="td td-sum">
+                    <div class="price">22 000.03 ₽</div>
+                  </td>
+                  <td class="td td-settings">
+                    <div class="dropdown dropdown-order">
+                      <div class="dropdown-toggle dropdown-toggle-dots">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#dots"></use>
+                        </svg>
+                      </div>
+                      <div class="dropdown-menu">
+                        <a href="#" class="dropdown-menu__link">Редактировать</a>
+                        <a href="#" class="dropdown-menu__link">Снять с публикации</a>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="tr">
+                  <td class="td td-date">
+                    <p>6 июня, 2022 / 13:12</p>
+                  </td>
+                  <td class="td td-order">
+                    <p>#DGSDVFE25t </p>
+                  </td>
+                  <td class="td td-description">
+                    <p>Описание Продавец Цена 💜Личный акк...</p>
+                  </td>
+                  <td class="td td-status">
+                    <div class="status-order status-order-on">
+                      <div class="status-order-dot"></div>
+                      <p>Открыт</p>
+                    </div>
+                  </td>
+                  <td class="td td-sum">
+                    <div class="price">22 000.03 ₽</div>
+                  </td>
+                  <td class="td td-settings">
+                    <div class="dropdown dropdown-order">
+                      <div class="dropdown-toggle dropdown-toggle-dots">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#dots"></use>
+                        </svg>
+                      </div>
+                      <div class="dropdown-menu">
+                        <a href="#" class="dropdown-menu__link">Редактировать</a>
+                        <a href="#" class="dropdown-menu__link">Снять с публикации</a>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <a href="#" class="btn btn-md btn-border btn-toggle">Показать еще</a>
+
+          </div>
+          <div class="tabs__content">
+            <table class="table table-deals table-buy">
+              <thead class="thead">
+                <tr class="tr">
+                  <td class="td td-date">Дата</td>
+                  <td class="td td-order">Заказ</td>
+                  <td class="td td-description">Описание</td>
+                  <td class="td td-salesman">Продавец</td>
+                  <td class="td td-status">Статус</td>
+                  <td class="td td-sum">Сумма</td>
+                </tr>
+              </thead>
+
+              <tbody class="tbody">
+                <tr class="tr">
+                  <td class="td td-date">
+                    <p>6 июня, 2022 / 13:12</p>
+                  </td>
+                  <td class="td td-order">
+                    <p>#DGSDVFE25t </p>
+                  </td>
+                  <td class="td td-description">
+                    <p>Описание Продавец Цена 💜Личный акк...</p>
+                  </td>
+                  <td class="td td-salesman">
+                    <div class="salesman-box">
+                      <div class="salesman-box__photo"><img src="img/photo1.jpeg" alt="">
+                        <div class="status status-off"></div>
+                      </div>
+                      <div class="salesman-box__name">Jane Cooper</div>
+                    </div>
+
+                    <div class="status-order status-order-on">
+                      <div class="status-order-dot"></div>
+                      <p>Открыт</p>
+                    </div>
+                  </td>
+                  <td class="td td-status">
+                    <div class="status-order status-order-on">
+                      <div class="status-order-dot"></div>
+                      <p>Открыт</p>
+                    </div>
+                  </td>
+                  <td class="td td-sum">
+                    <div class="price">22 000.03 ₽</div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="copyright">© 2022 Jyn.ru</div>
+      <ul class="footer-list my-ul">
+        <li><a href="#" class="link color-grey footer-link" target="_blank">Клиентская поддержка</a></li>
+        <li><a href="#" class="link color-grey footer-link" target="_blank">Публичная оферта</a></li>
+        <li><a href="#" class="link color-grey footer-link" target="_blank">Политика конфиденциальности</a></li>
+      </ul>
+
+
+      <ul class="list-payment my-ul">
+        <li><a href="#">
+          <img src="img/webmoney.png" alt="">
+        </a></li>
+        <li><a href="#">
+          <img src="img/webmoney-blue.png" alt="">
+        </a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+
+
+<div class="modal__div" id="modal1">
+  <div class="modal__wrapper">
+    <div class="modal__div-head">
+      <h2>Подать объявление</h2>
+      <div class="modal__close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </div>
+    </div>
+
+    <form method="post" class="form modal-form">
+      <div class="modal__div-body">
+        <div class="form-row">
+          <div class="input-title">
+            <p>Сервер</p>
+          </div>
+          <div class="dropdown dropdown-select">
+            <div class="dropdown-toggle">PC
+              <div class="dropdown-toggle__icon"></div>
+            </div>
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-menu__link">
+                <span class="dropdown-menu__link-icon"><img src="img/menu-icon2.svg" alt=""></span>
+                <span class="dropdown-menu__link-text">Настройки</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="input-title">
+            <p>Описание</p>
+          </div>
+          <label>
+            <textarea name="message"></textarea>
+          </label>
+        </div>
+
+        <div class="form-row">
+          <div class="input-title">
+            <p>Количество</p>
+          </div>
+          <label>
+            <input type="text" value="12" class="input-password" name="value" required>
+          </label>
+        </div>
+
+        <div class="form-row">
+          <div class="input-title">
+            <p>Цена</p>
+          </div>
+          <label>
+            <input type="text" value="700" name="sum" required>
+            <span class="input-subtext">₽</span>
+          </label>
+        </div>
+      </div>
+      <div class="modal__div-footer">
+        <div class="btn-group justify-content-end">
+          <a href="#" class="btn btn-border btn-close-modal btn-lg">Отмена</a>
+          <button type="submit" class="btn btn-white btn-lg">Опубликовать</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Пoдлoжкa -->
+<div class="overlay"></div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1231 @@
+@import "vars"
+
+/*==========  section registration-section ==========*/
+.registration-section
+  height: 100%
+  .container
+    height: 100%
+    align-items: center
+
+
+.registration-box
+  max-width: 724px
+  width: 100%
+  margin: 0 auto 30px
+  background: #FFFFFF
+  color: #0E0E0E
+  border-radius: 22px
+  .input-title, .input-description
+    color: #676767
+  &:last-child
+    margin: 0 auto
+  &__head
+    width: 100%
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    padding: 40px 40px 0
+    color: #0E0E0E
+    h2
+      width: fit-content
+      margin: 0 auto 0 0
+  &__footer
+    border-top: 1px solid #E1E1E1
+    padding: 32px 40px
+    .box-text
+      display: flex
+      align-items: center
+      flex-wrap: wrap
+      justify-content: center
+      font-size: 14px
+      margin: 24px auto 0
+      a
+        margin-left: 8px
+  &__body
+    padding: 32px 40px 40px
+    .box-text
+      line-height: 24px
+  form
+    button
+      max-width: 406px
+      width: 100%
+      margin: 0 auto
+  &__item
+    border-bottom: 1px solid #282828
+    &:last-child
+      border: none
+  .color-accent
+    color: #676767
+
+.registration-box-settings
+  .registration-box__body
+    padding: 32px
+    width: 100%
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+  .text
+    margin: 0 auto 0 0
+    max-width: 415px
+    font-size: 24px
+    font-weight: bold
+    p
+      line-height: 22px
+      margin: 8px 0 0
+      color: rgba(#fff, .6)
+      font-size: 14px
+      font-weight: normal
+
+.btn-confirm
+  max-width: 406px
+  width: 100%
+
+.form-row-attention
+  display: flex
+  align-items: center
+  padding: 10px 16px
+  font-size: 14px
+  background: #F6F6F6
+  border-radius: 8px
+  &__icon
+    @include d-flex
+    width: 20px
+    height: 20px
+    min-width: 20px
+    border: 1.5px solid $accent
+      radius: 50%
+    stroke: $accent
+    fill: none
+    padding: 4px
+    margin: 0 9px 0 0
+
+
+/*==========  section registration-section end  ==========*/
+
+
+/*==========  section settings-page ==========*/
+.settings-page
+  h1
+    margin: 0 auto 36px
+
+  .form-password
+    button
+      max-width: none
+      width: fit-content
+      margin: 0 0 0 auto
+
+.page-wrapper
+  max-width: 724px
+  width: 100%
+  margin: 0 auto
+
+.form-row-profile
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  padding: 0 0 32px
+  border-bottom: 1px solid #282828
+  .user-photo
+    margin: 0 32px 0 0
+    width: 68px
+    height: 68px
+    min-width: 68px
+
+.tabs
+  width: 100%
+  .form-search
+    max-width: 299px
+
+.tabs__content
+  display: none
+  &.active
+    display: block
+
+.tabs__caption
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 0 32px
+  border-bottom: 1px solid #E1E1E1
+  font-size: 14px
+  li
+    cursor: pointer
+    position: relative
+    padding: 0 0 16px
+    margin: 0 32px 0 0
+    display: flex
+    align-items: center
+    p
+      display: flex
+      align-items: center
+      &:after
+        content: '·'
+        display: inline-block
+        margin: 0 8px
+    &:last-child
+      margin: 0
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      bottom: -1px
+      width: 0
+      height: 1px
+      background: #0E0E0E
+      transition: .3s ease
+    &.active
+      &:before
+        width: 100%
+
+.link-delete
+  margin-left: 24px
+
+
+/*==========  section settings-page end  ==========*/
+
+
+/*==========  section popular-games ==========*/
+.popular-games
+  h1
+    margin: 0 0 40px
+
+.search-result-wrapper
+  h3
+    font-size: 20px
+    font-weight: 500
+
+.popular-game-card
+  width: 100%
+  height: 100%
+  position: relative
+  background: $accent
+  border-radius: 22px
+  overflow: hidden
+  .list-tags
+    li
+      a
+        color: #fff
+  &__img
+    width: 100%
+    height: 174px
+    overflow: hidden
+    display: flex
+    align-items: center
+    justify-content: center
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__body
+    padding: 50px 24px 15px
+    position: relative
+  &__logo
+    position: absolute
+    z-index: 1
+    left: 24px
+    top: -40px
+    width: 80px
+    height: 80px
+    border-radius: 50%
+    background: #0E0E0E
+    padding: 20px
+    @include d-flex
+  &__title
+    color: #fff
+    text-transform: uppercase
+    font-size: 24px
+    font-weight: bold
+    margin: 0 0 20px
+    &:hover
+      color: $accent
+
+.games
+  margin: 52px 0 0
+  h2
+    margin: 0 0 40px
+
+.games-line
+  margin: 0 0 40px
+  border-bottom: 1px solid #202020
+  &:last-child
+    border: none
+    margin: 0
+
+.game-item
+  width: 100%
+  &__title
+    color: $accent
+    margin: 0 0 8px
+    font-size: 20px
+    font-weight: 500
+    line-height: 30px
+    &:hover
+      color: $accent
+
+
+/*==========  section end popular-games ==========*/
+
+
+
+/*==========  section ads ==========*/
+.ads-section
+  margin: 0 0 83px
+  .search-result-wrapper
+    margin: 32px 0 0
+
+
+
+.table
+  width: 100%
+  margin: 16px 0 0
+  font-size: 14px
+  border-spacing: 0 10px
+  border-collapse: inherit
+
+
+.thead, .tbody
+  width: 100%
+
+
+  
+.tbody
+  font-size: 16px
+  .tr
+    border-radius: 16px
+    margin: 0 0 8px
+    &:last-child
+      margin: 0
+  .td
+    padding: 26px 23px
+
+
+.tr
+  vertical-align: middle
+  width: 100%
+
+
+.td
+  padding: 16px 23px
+  vertical-align: middle
+  background: #fff
+  color: #0E0E0E
+  border: 1px solid #E1E1E1
+    right: none
+    left: none
+  &:first-child
+    border-radius: 16px 0 0 16px
+    -moz-border-radius: 16px 0 0 16px
+    -webkit-border-radius: 16px 0 0 16px
+    border-left: 1px solid #E1E1E1
+  &:last-child
+    border-radius: 0 16px 16px 0
+    -moz-border-radius: 0 16px 16px 0
+    -webkit-border-radius: 0 16px 16px 0
+    border-right: 1px solid #E1E1E1
+
+.thead
+  color: #676767
+  text-align: left
+  .td
+    background: transparent
+    color: #676767
+    border: none
+
+//.td-server
+//  width: 7%
+//
+//.td-date
+//  width: 7%
+//
+//.td-order
+//  width: 59%
+//
+//.td-description
+//  width: 59%
+//
+//.td-status
+//  width: 14%
+//
+.td-salesman
+  width: 15%
+
+.td-price
+  width: 14%
+
+
+.ads-title
+  color: #0E0E0E
+  line-height: 24px
+  &:hover
+    color: $accent
+
+.salesman-box
+  display: flex
+  align-items: center
+  background: #F6F6F6
+  border-radius: 39px
+  padding: 4px 10px 4px 4px
+  width: fit-content
+  &__photo
+    @include d-flex
+
+    position: relative
+    margin: 0 10px 0 0
+    width: 24px
+    height: 24px
+    min-width: 24px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+      border-radius: 50%
+      overflow: hidden
+
+.status
+  position: absolute
+  z-index: 1
+  right: 0
+  bottom: 0
+  border: 1px solid #2E2E2E
+    radius: 50%
+  width: 10px
+  height: 10px
+
+.status-off
+  background: #9D9D9D
+
+
+.status-on
+  background: #15D97B
+
+.form-search-no-active.active
+  input
+    border-radius: 20px
+
+/*==========  section ads end  ==========*/
+
+
+/*==========  section deals ==========*/
+
+.dropdown-order
+  .dropdown-menu
+    left: auto
+    right: 0
+    transform: none
+    border-radius: 8px
+    min-width: 183px
+
+
+.dropdown-toggle-dots
+  width: 24px
+  height: 24px
+  min-width: 24px
+  stroke: #676767
+  margin-left: auto
+  @include d-flex
+  &.active
+    stroke: #fff
+
+.icon-arrow-price
+  width: 20px
+  height: 20px
+  fill: none
+  stroke: #676767
+  margin: 0 0 -3px 4px
+
+.filter-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+
+.dropdown-price
+  margin: 0 0 0 16px
+  width: fit-content
+  .dropdown-toggle
+    display: flex
+    align-items: center
+    background: #F6F6F6
+    border-radius: 31px
+    padding: 5px 16px
+    height: 40px
+    color: #0E0E0E
+  .dropdown-toggle__icon
+    width: 16px
+    height: 16px
+    min-width: 16px
+    margin: 0 0 0 8px
+    background: url("../img/arrow-select.svg") no-repeat center
+      size: 100%
+  .dropdown-menu
+    padding: 20px
+    border:
+      radius: 8px
+      //bottom: 1px solid #2E2E2E
+    margin: 12px 0 0
+    min-width: 316px
+    left: 0
+    transform: none
+  &.active
+    .dropdown-toggle__icon
+      display: none
+    .btn-clear
+      display: flex
+    .link-replace
+      color: $accent
+    .link-replace__icon
+      stroke: $accent
+
+.dropdown-select-v2
+  .dropdown-toggle__icon
+    margin: 0
+  .input-subtext
+    margin: 0 16px 0 auto
+    position: relative
+    top: 0
+    right: 0
+    transform: none
+    font-size: 16px
+    font-weight: 500
+    color: #0E0E0E
+    span
+      margin: 0 0 0 4px
+      color: #0E0E0E
+
+.btn-clear
+  stroke: #fff
+  width: 16px
+  height: 16px
+  margin: 0 0 0 8px
+  display: none
+  align-items: center
+  justify-content: center
+
+.input-group
+  display: flex
+  align-items: flex-start
+  label
+    width: 134px
+    margin: 0 8px 0 0
+    &:last-child
+      margin: 0
+  input
+    background: #fff
+    color: #676767
+    padding: 0 23px 0 16px
+    &:focus
+      border: 1px solid #676767
+
+.link-replace
+  display: flex
+  align-items: center
+  margin: 20px 0 0 auto
+  color: $accent
+  font-size: 14px
+  &.active
+    color: $accent
+    .link-replace__icon
+      stroke: $accent
+  &__icon
+    @include d-flex
+    fill: none
+    stroke: $accent
+    width: 16px
+    height: 16px
+    min-width: 16px
+    margin: 0 8px 0 0
+
+
+.status-order
+  display: flex
+  align-items: center
+  background: #F6F6F6
+  border-radius: 20px
+  width: fit-content
+  padding: 4px 10px
+  line-height: 24px
+  &__icon
+    margin: 0 8px 0 0
+    width: 16px
+    height: 16px
+    min-width: 16px
+  &-wait
+    color: #F2D17B
+  &-error
+    color: #E06565
+
+.status-order-off
+  color: #9D9D9D
+
+.status-order-on
+  color: $green
+  .status-order-dot
+    background: $green
+
+.status-order-dot
+  @include d-flex
+  margin: 0 8px 0 0
+  border-radius: 50%
+  width: 8px
+  height: 8px
+  min-width: 8px
+  background: #676767
+
+
+.td-salesman
+  .status-order
+    display: none
+
+
+/*==========  section deals end  ==========*/
+
+
+/*==========  section history ==========*/
+.finance-box
+  background: #fff
+  padding: 32px
+  width: 100%
+  max-width: 626px
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  border-radius: 16px
+  color: $black
+  h4
+    width: 100%
+    margin: 0 0 8px
+    color: #676767
+    font-size: 14px
+  &__val
+    font-size: 32px
+    font-weight: bold
+    margin: 0 250px 0 0
+    line-height: 40px
+
+.history
+  margin: 48px 0 96px
+
+.table-history
+  .td
+    width: 20%
+  .td-status
+    .salesman-box
+      display: none
+  .td-description
+    width: 35%
+
+.total-sum
+  &-val
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    font-size: 18px
+    font-weight: 500
+    p
+      margin: 0 4px 0 0
+
+
+.percent
+  display: flex
+  align-items: center
+  margin: 8px 0 0
+  color: #676767
+  font-size: 14px
+  p
+    margin: 0 4px 0 0
+
+/*==========  section history end  ==========*/
+
+/*==========  section  ==========*/
+
+.attention-text
+  margin: 14px auto 0
+  color: #676767
+  font-size: 12px
+  line-height: 18px
+  max-width: 391px
+  width: 100%
+  text-align: center
+
+.description-text
+  p
+    margin: 0 0 30px
+    &:last-child
+      margin: 0
+
+.order-box
+  max-width: none
+  width: 100%
+  overflow: hidden
+
+.form-chat
+  .message-input
+    margin: 0 auto 10px 0
+  .add-quote
+    width: fit-content
+    margin: 0
+  .registration-box
+    &__body
+      height: 375px
+      overflow-y: auto
+      width: calc(100% - 6px)
+      padding: 30px 32px
+      .text-info
+        width: 100%
+        height: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-wrap: wrap
+        text-align: center
+        color: #676767
+        font-size: 14px
+      &::-webkit-scrollbar
+        width: 6px
+        background: transparent
+        border-radius: 21px
+      &::-webkit-scrollbar-thumb
+        width: 6px
+        border-radius: 21px
+        background: #2E2E2E
+    &__footer
+      padding: 16px 32px
+      margin: auto 0 0
+      display: flex
+      align-items: flex-end
+      flex-wrap: wrap
+      width: calc(100% + 5px)
+
+.image-chat
+  overflow: hidden
+  margin: 0 0 6px
+  border-radius: 8px
+  height: 156px
+  width: 100%
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    width: 20px
+    height: 20px
+    @include d-flex
+    background: url("../img/lupe.svg") no-repeat center
+      size: 100%
+    opacity: 0
+    transition: .3s ease
+  &:hover
+    &:before
+      opacity: 1
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.image-chat-min
+  max-width: 156px
+
+.image-chat-max
+  max-width: 260px
+
+.message-input
+  width: calc(100% - 130px - 36px)
+  padding: 0 0 0 16px
+  input, textarea
+    padding: 0
+    width: 100%
+    height: auto
+    font-size: 16px
+    background: transparent
+    border: none
+      radius: 0
+  textarea
+    resize: none
+    display: flex
+    align-items: center
+    overflow-wrap: anywhere
+
+
+.error-box
+  display: flex
+  align-items: center
+  margin: 8px 0 0
+  color: #ff0000
+  font-weight: 500
+  font-size: 12px
+  width: 100%
+  img
+    margin: 0 4px 0 0
+
+.quote-box
+  display: flex
+  align-items: flex-end
+  flex-wrap: wrap
+  margin: 0 0 38px
+  &:last-child
+    margin: 0
+  &__photo
+    @include d-flex
+    overflow: hidden
+    border-radius: 50%
+    width: 32px
+    height: 32px
+    min-width: 32px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__content
+    width: calc(100% - 32px)
+    padding: 0 0 0 8px
+  .date
+    width: 100%
+    margin: 6px 0 0
+    color: #676767
+    font-size: 12px
+    padding: 0 0 0 40px
+
+.quote-box-cat
+  position: relative
+  padding: 6px 12px
+  background: #F6F6F6
+  border-radius: 18px
+  z-index: 1
+  margin: 0 0 6px
+  width: fit-content
+  font-size: 16px
+  line-height: 24px
+  &:before
+    content: ''
+    position: absolute
+    background: url("../img/chat-decor.svg") no-repeat center
+      size: 100%
+    left: -5px
+    bottom: 0
+    width: 16px
+    height: 20px
+    display: none
+
+  &:last-child
+    margin: 0
+    &:before
+      display: block
+
+.answer-box
+  justify-content: flex-end
+  .date
+    padding: 0
+    text-align: right
+  .quote-box-cat
+    background: #F6F6F6
+    color: #0E0E0E
+    &:before
+      display: block
+      background: url("../img/answer-decor.svg") no-repeat center
+        size: 100%
+      left: auto
+      right: -5px
+
+.btn-confirm
+  margin: 0 auto
+  max-width: 407px
+  width: 100%
+
+.title-wrapper
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 0 36px
+  h1
+    margin: 0 16px 0 0
+    width: fit-content
+
+.chat-item
+  margin: 0 0 16px
+  width: 100%
+  .date
+    color: #676767
+    font-size: 12px
+    margin: 6px 0 0
+  &:last-child
+    margin: 0
+  &__wrapper
+    background: #F6F6F6
+    border-radius: 16px
+    padding: 16px
+  ul
+    padding: 0
+    list-style: none
+  .box-text
+    line-height: 24px
+    p
+      margin: 0 0 30px
+      &:last-child
+        margin: 0
+    strong
+      display: block
+      font-weight: 500
+  .salesman-box
+    margin: 0 0 8px
+    background: #fff
+
+
+.status-verification
+  padding: 4px 10px 4px 4px
+  width: fit-content
+  background: #fff
+  border-radius: 39px
+  margin: 0 0 8px
+  .status-order__icon
+    width: 24px
+    height: 24px
+    min-width: 24px
+    background: #F6F6F6
+    border-radius: 50%
+    @include d-flex
+    fill: none
+    stroke: #14A760
+    padding: 6px
+
+.chat-box-status
+  .registration-box__footer
+    border: none
+
+
+.error-page
+  width: 100%
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  h1
+    text-align: center
+    line-height: 200px
+    margin: 0 auto
+    font-weight: bold
+    font-size: 260px
+  .subtitle
+    margin: 40px auto
+    font-size: 24px
+    font-weight: bold
+
+.file
+  width: 20px
+  @include d-flex
+  cursor: pointer
+  stroke: #676767
+  fill: none
+  margin: 0 0 10px
+  .file-icon
+    width: 20px
+    height: 20px
+
+.inp-file
+  display: none
+
+.file-result
+  width: calc(100% + 8px)
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  margin: 16px -4px 0
+  &__box
+    width: 88px
+    height: 80px
+    overflow: hidden
+    border-radius: 8px
+    position: relative
+    @include d-flex
+    margin: 0 0 8px 0
+    padding: 0 4px
+    &:last-child
+      margin: 0 0 8px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+      border-radius: 8px
+
+.file-result-order
+  width: calc(100% + 12px)
+  margin: 24px -6px 0
+  .file-result__box
+    width: 136px
+    height: 124px
+    margin: 0 0 12px
+    padding: 0 6px
+
+    &:last-child
+      margin: 0
+
+.btn-delete-file
+  @include d-flex
+  stroke: #fff
+  top: 2px
+  right: 6px
+  position: absolute
+  border: 1.5px solid #FFFFFF
+    radius: 50%
+  width: 14px
+  height: 14px
+  padding: 1px
+
+/*==========  section end  ==========*/
+
+/*==========  authentication   ==========*/
+.form-authentication
+  h3
+    margin: 0 0 24px
+    font-size: 16px
+    font-weight: 500
+
+.image-qr
+  margin: 0 auto
+  display: flex
+  align-items: center
+  justify-content: center
+
+.number-qr
+  text-align: center
+  width: 100%
+  margin: 16px auto
+
+.btn-copy
+  margin: 0 auto
+
+.link-info
+  display: flex
+  align-items: center
+  .svg-icon
+    stroke: #fff
+    fill: none
+    margin: 0 0 0 6px
+    width: 20px
+    height: 20px
+    @include d-flex
+
+.levels-game
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+
+
+.levels-game-preview
+  width: calc(100% - 399px)
+  padding: 0 12px 0 0
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+  &__item
+    width: calc(50% - 6px)
+    height: 124px
+    margin: 0 0 12px
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+    transition: .3s ease
+    background: #E1E1E1 url("../img/bg-overlay1.png") no-repeat center
+      size: cover
+    border: 1.5px solid #E1E1E1
+      radius: 8px
+    overflow: hidden
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+    &.active
+      border: 1.5px solid #FFFFFF
+      .level-value
+        background: $accent
+        color: #fff
+
+.level-value
+  position: absolute
+  text-align: center
+  z-index: 1
+  left: 0
+  bottom: 0
+  width: 100%
+  background: #E1E1E1
+  padding: 2px
+  font-size: 12px
+  line-height: 18px
+
+
+.levels-game-max
+  max-width: 399px
+  width: 100%
+
+.levels-game-box
+  width: 100%
+  height: 668px
+  position: relative
+  //overflow: hidden
+  background: #fff
+  border-radius: 8px
+
+  &__images
+    position: relative
+    width: 100%
+    height: 100%
+    .img-bg
+      width: 100%
+      height: 100%
+      object-fit: cover
+      border-radius: 8px
+
+.list-weapon
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  margin: 0 8px 0 0
+  &:last-child
+    margin: 16px 0 0
+  li
+    margin: 0 0 8px 0
+    &:last-child
+      margin: 0
+  &__item
+    width: 48px
+    height: 48px
+    display: flex
+    align-items: center
+    background: $accent
+    border-radius: 8px
+
+.weapon-box
+  position: absolute
+  left: 16px
+  top: 16px
+  display: flex
+  align-items: flex-start
+
+.bonuses-box
+  position: absolute
+  top: 236px
+  right: 16px
+  display: flex
+  align-items: flex-start
+
+.list-bonuses
+  display: flex
+  flex-direction: column
+  margin: 0 8px 0 0
+  li
+    margin: 0 0 8px
+    &:last-child
+      margin: 0
+  &:last-child
+    margin: 16px 0 0 0
+
+.bonuses-item
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 50%
+  width: 48px
+  height: 48px
+  background: $accent
+  fill: none
+  stroke: #fff
+  padding: 14px
+
+.tooltip
+  position: relative
+  &:before
+    content: attr(data-text)
+    position: absolute
+    left: 50%
+    bottom: 100%
+    margin: 0 auto 16px
+    transform: translate(-50%,0)
+    background: $black
+    border-radius: 36px
+    padding: 5px 16px
+    color: #fff
+    font-size: 12px
+    line-height: 18px
+    white-space: nowrap
+    transition: .3s ease
+    display: none
+    z-index: 1
+  &:after
+    content: ''
+    position: absolute
+    clip-path: polygon(50% 100%, 0 0, 100% 0)
+    width: 21px
+    height: 10px
+    background: $black
+    border-radius: 1px
+    left: 50%
+    transform: translate(-50%,0)
+    bottom: 100%
+    margin: 0 auto 8px
+    transition: .3s ease
+    display: none
+  &:hover
+    background: $black
+    &:before, &:after
+      display: block
+
+.levels-game-box__body
+  position: absolute
+  left: 0
+  bottom: 0
+  width: 100%
+  z-index: 1
+
+.levels-game-box__head
+  width: 100%
+  text-align: center
+  background: $accent
+  font-size: 14px
+  padding: 5px
+  font-weight: 500
+  line-height: 22px
+  color: #fff
+
+.levels-game-box__text
+  width: 100%
+  padding: 16px
+  background: #E1E1E1
+  border-radius: 0px 0px 8px 8px
+  h3
+    font-weight: 500
+    margin: 0 0 16px
+  .box-text
+    font-size: 14px
+    line-height: 22px
+
+.levels-game-box__it
+  margin: 16px 0
+  display: flex
+  align-items: center
+  &-img
+    @include d-flex
+    width: 54px
+    height: 54px
+    min-width: 54px
+    overflow: hidden
+    border-radius: 8px
+    background: #fff
+    margin: 0 16px 0 0
+  &-text
+    font-size: 14px
+    line-height: 22px
+    p
+
+      font-weight: 500
+    span
+      color: #9D9D9D
+      display: block
+      margin: 4px 0 0
+
+/*==========  authentication end  ==========*/
