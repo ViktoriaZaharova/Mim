@@ -72,7 +72,7 @@
     p
       line-height: 22px
       margin: 8px 0 0
-      color: rgba(#fff, .6)
+      color: #0E0E0E
       font-size: 14px
       font-weight: normal
 
@@ -706,6 +706,12 @@
       align-items: flex-end
       flex-wrap: wrap
       width: calc(100% + 5px)
+  .file-result__box
+    &:before
+      display: none
+    &:after
+      width: calc(100% - 8px)
+      opacity: .4
 
 .image-chat
   overflow: hidden
@@ -727,7 +733,20 @@
       size: 100%
     opacity: 0
     transition: .3s ease
+    z-index: 1
+  &:after
+    content: ''
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: #000
+    opacity: .0
+    position: absolute
+    transition: .3s ease
   &:hover
+    &:after
+      opacity: .7
     &:before
       opacity: 1
   img
@@ -951,6 +970,35 @@
     @include d-flex
     margin: 0 0 8px 0
     padding: 0 4px
+    &:after
+      content: ''
+      position: absolute
+      left: 50%
+      top: 0
+      transform: translate(-50%,0)
+      width: calc(100% - 12px)
+      height: 100%
+      background: #000
+      opacity: 0
+      border-radius: 8px
+      transition: .3s ease
+    &:before
+      content: ''
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+      width: 20px
+      height: 20px
+      background: url("../img/lupe.svg") no-repeat center
+      opacity: 0
+      transition: .3s ease
+      z-index: 1
+    &:hover
+      &:after
+        opacity: .5
+      &:before
+        opacity: 1
     &:last-child
       margin: 0 0 8px
     img
@@ -958,6 +1006,7 @@
       height: 100%
       object-fit: cover
       border-radius: 8px
+
 
 .file-result-order
   width: calc(100% + 12px)
@@ -973,15 +1022,16 @@
 
 .btn-delete-file
   @include d-flex
-  stroke: #E93B3B
+  stroke: #fff
   top: 2px
   right: 6px
   position: absolute
-  border: 1.5px solid #E93B3B
+  border: 1.5px solid #fff
     radius: 50%
   width: 14px
   height: 14px
   padding: 1px
+  z-index: 1
 
 /*==========  section end  ==========*/
 

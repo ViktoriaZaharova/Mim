@@ -106,6 +106,26 @@ input, textarea, select {
     background: #F6F6F6;
     color: #0E0E0E; }
 
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+  border: 1px solid transparent;
+  -webkit-text-fill-color: #fff;
+  -webkit-box-shadow: 0 0 0px 1000px #F6F6F6 inset;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+  color: #0E0E0E; }
+  input:-webkit-autofill:hover, input:-webkit-autofill:focus, textarea:-webkit-autofill:hover, textarea:-webkit-autofill:focus, select:-webkit-autofill:hover, select:-webkit-autofill:focus {
+    border: 1px solid transparent;
+    -webkit-text-fill-color: #fff;
+    -webkit-box-shadow: 0 0 0px 1000px #F6F6F6 inset;
+    -webkit-transition: background-color 5000s ease-in-out 0s;
+    transition: background-color 5000s ease-in-out 0s;
+    color: #0E0E0E;
+    opacity: 1; }
+    input:-webkit-autofill:hover::-webkit-input-placeholder, input:-webkit-autofill:focus::-webkit-input-placeholder, textarea:-webkit-autofill:hover::-webkit-input-placeholder, textarea:-webkit-autofill:focus::-webkit-input-placeholder, select:-webkit-autofill:hover::-webkit-input-placeholder, select:-webkit-autofill:focus::-webkit-input-placeholder {
+      color: #0E0E0E; }
+    input:-webkit-autofill:hover::placeholder, input:-webkit-autofill:focus::placeholder, textarea:-webkit-autofill:hover::placeholder, textarea:-webkit-autofill:focus::placeholder, select:-webkit-autofill:hover::placeholder, select:-webkit-autofill:focus::placeholder {
+      color: #0E0E0E; }
+
 textarea {
   height: 152px;
   resize: none;
@@ -246,7 +266,7 @@ button, .btn {
   color: #fff;
   background: #118FF2; }
   .btn-accent:hover {
-    background: #2645b5;
+    background: #E93B3B;
     color: #fff; }
   .btn-accent:focus, .btn-accent:active, .btn-accent.active {
     background: #E93B3B;
@@ -389,7 +409,7 @@ a.color-grey:hover {
   color: #118FF2; }
 
 a.color-accent:hover {
-  color: #fff; }
+  color: #118FF2; }
 
 .color-white {
   color: #fff; }

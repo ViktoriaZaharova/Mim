@@ -101,21 +101,21 @@ input, textarea, select
   //  border: 1px solid #373737
 
 
-//input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill
-//  border: 1px solid transparent
-//  -webkit-text-fill-color: #fff
-//  -webkit-box-shadow: 0 0 0px 1000px #F6F6F6 inset
-//  transition: background-color 5000s ease-in-out 0s
-//  color: #0E0E0E
-//  &:hover, &:focus
-//    border: 1px solid transparent
-//    -webkit-text-fill-color: #fff
-//    -webkit-box-shadow: 0 0 0px 1000px #F6F6F6 inset
-//    transition: background-color 5000s ease-in-out 0s
-//    color: #0E0E0E
-//    opacity: 1
-//    &::placeholder
-//      color: #0E0E0E
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill
+  border: 1px solid transparent
+  -webkit-text-fill-color: #fff
+  -webkit-box-shadow: 0 0 0px 1000px #F6F6F6 inset
+  transition: background-color 5000s ease-in-out 0s
+  color: #0E0E0E
+  &:hover, &:focus
+    border: 1px solid transparent
+    -webkit-text-fill-color: #fff
+    -webkit-box-shadow: 0 0 0px 1000px #F6F6F6 inset
+    transition: background-color 5000s ease-in-out 0s
+    color: #0E0E0E
+    opacity: 1
+    &::placeholder
+      color: #0E0E0E
 
 
 
@@ -234,7 +234,7 @@ button, .btn
   background: $accent
 
   &:hover
-    background: $hover
+    background: $red
     color: #fff
   &:focus, &:active, &.active
     background: $red
@@ -364,7 +364,7 @@ a.color-grey
 
 a.color-accent
   &:hover
-    color: #fff
+    color: $accent
 
 .color-white
   color: #fff
