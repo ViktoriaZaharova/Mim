@@ -822,10 +822,10 @@
 
 .image-chat {
   overflow: hidden;
-  margin: 0 0 6px;
+  margin: 0 8px 6px 0;
   border-radius: 8px;
-  height: 156px;
-  width: 100%;
+  width: 88px;
+  height: 80px;
   position: relative; }
   .image-chat:before {
     content: '';
@@ -871,12 +871,8 @@
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover; }
-
-.image-chat-min {
-  max-width: 156px; }
-
-.image-chat-max {
-  max-width: 260px; }
+  .image-chat:last-child {
+    margin-right: 0; }
 
 .message-input {
   width: calc(100% - 130px - 36px);
@@ -967,7 +963,15 @@
   width: -moz-fit-content;
   width: fit-content;
   font-size: 16px;
-  line-height: 24px; }
+  line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
   .quote-box-cat:before {
     content: '';
     position: absolute;
