@@ -228,7 +228,7 @@
     width: 80px
     height: 80px
     border-radius: 50%
-    background: #0E0E0E
+    background: #fff
     padding: 20px
     @include d-flex
   &__title
@@ -238,7 +238,7 @@
     font-weight: bold
     margin: 0 0 20px
     &:hover
-      color: $accent
+      color: #9D9D9D
 
 .games
   margin: 52px 0 0
@@ -428,11 +428,16 @@
     stroke: #fff
 
 .icon-arrow-price
-  width: 20px
-  height: 20px
+  width: 10px
+  height: 14px
   fill: none
   stroke: #676767
   margin: 0 0 -3px 4px
+  &:last-child
+    margin-left: 0
+
+.icon-close-price
+  width: 14px
 
 .filter-wrapper
   width: 100%
@@ -476,6 +481,8 @@
       color: $accent
     .link-replace__icon
       stroke: $accent
+  .input-group input
+    background: #F6F6F6
 
 .dropdown-select-v2
   .dropdown-toggle__icon
@@ -551,15 +558,18 @@
     height: 16px
     min-width: 16px
   &-wait
-    color: #F2D17B
+    color: #DD9F00
+    background: #FAF3E0
   &-error
-    color: #E06565
+    color: #E93B3B
+    background: #FCE7E7
 
 .status-order-off
   color: #9D9D9D
 
 .status-order-on
-  color: $green
+  color: #00AE5B
+  background: #E0F7EC
   .status-order-dot
     background: $green
 
@@ -963,11 +973,11 @@
 
 .btn-delete-file
   @include d-flex
-  stroke: #fff
+  stroke: #E93B3B
   top: 2px
   right: 6px
   position: absolute
-  border: 1.5px solid #FFFFFF
+  border: 1.5px solid #E93B3B
     radius: 50%
   width: 14px
   height: 14px

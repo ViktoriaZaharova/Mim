@@ -3,12 +3,12 @@
 
 <head>
   <meta charset="utf-8">
-  <title>JYN</title>
+  <title>Mim</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <meta property="og:image" content="path/to/image.jpg">
-  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="img/favicon/favicon.jpg" type="image/x-icon">
 
   <!-- Chrome, Firefox OS and Opera -->
   <meta name="theme-color" content="#000">
@@ -176,7 +176,11 @@
               <div class="dropdown dropdown-price">
                 <div class="dropdown-toggle">Цена
                   <div class="dropdown-toggle__icon"></div>
-                  <div class="btn-clear"><svg class="svg-icon"><use xlink:href="img/sprite.svg#close"></use></svg></div>
+                  <div class="btn-clear">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#close"></use>
+                    </svg>
+                  </div>
                 </div>
                 <div class="dropdown-menu">
                   <div class="input-group">
@@ -192,7 +196,8 @@
                   </div>
 
                   <a href="#" class="link-replace">
-                    <span class="link-replace__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#replace"></use></svg></span>
+                    <span class="link-replace__icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#replace"></use></svg></span>
                     <span class="link-replace__text">Сбросить</span>
                   </a>
                 </div>
@@ -205,7 +210,18 @@
                 <td class="td td-server">Сервер</td>
                 <td class="td td-description">Описание</td>
                 <td class="td td-salesman">Продавец</td>
-                <td class="td td-price">Цена <svg class="svg-icon icon-arrow-price"><use xlink:href="img/sprite.svg#arrow-bottom"></use></svg></td>
+                <td class="td td-price">Цена
+                  <svg class="svg-icon icon-arrow-price">
+                    <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                  </svg>
+                  <svg class="svg-icon icon-arrow-price">
+                    <use xlink:href="img/sprite.svg#arrow-top"></use>
+                  </svg>
+
+                  <svg class="svg-icon icon-arrow-price icon-close-price">
+                    <use xlink:href="img/sprite.svg#close"></use>
+                  </svg>
+                </td>
               </tr>
               </thead>
 

@@ -273,7 +273,7 @@
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background: #0E0E0E;
+    background: #fff;
     padding: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -291,7 +291,7 @@
     font-weight: bold;
     margin: 0 0 20px; }
     .popular-game-card__title:hover {
-      color: #118FF2; }
+      color: #9D9D9D; }
 
 .games {
   margin: 52px 0 0; }
@@ -470,11 +470,16 @@
     stroke: #fff; }
 
 .icon-arrow-price {
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 14px;
   fill: none;
   stroke: #676767;
   margin: 0 0 -3px 4px; }
+  .icon-arrow-price:last-child {
+    margin-left: 0; }
+
+.icon-close-price {
+  width: 14px; }
 
 .filter-wrapper {
   width: 100%;
@@ -529,6 +534,8 @@
     color: #118FF2; }
   .dropdown-price.active .link-replace__icon {
     stroke: #118FF2; }
+  .dropdown-price .input-group input {
+    background: #F6F6F6; }
 
 .dropdown-select-v2 .dropdown-toggle__icon {
   margin: 0; }
@@ -630,15 +637,18 @@
     height: 16px;
     min-width: 16px; }
   .status-order-wait {
-    color: #F2D17B; }
+    color: #DD9F00;
+    background: #FAF3E0; }
   .status-order-error {
-    color: #E06565; }
+    color: #E93B3B;
+    background: #FCE7E7; }
 
 .status-order-off {
   color: #9D9D9D; }
 
 .status-order-on {
-  color: #15D97B; }
+  color: #00AE5B;
+  background: #E0F7EC; }
   .status-order-on .status-order-dot {
     background: #15D97B; }
 
@@ -1155,11 +1165,11 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  stroke: #fff;
+  stroke: #E93B3B;
   top: 2px;
   right: 6px;
   position: absolute;
-  border: 1.5px solid #FFFFFF;
+  border: 1.5px solid #E93B3B;
     border-radius: 50%;
   width: 14px;
   height: 14px;
